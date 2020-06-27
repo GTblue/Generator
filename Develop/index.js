@@ -1,16 +1,61 @@
-// array of questions for user
-const questions = [
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown")
 
-];
+function promptUser() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "title",
+        message: "What is the name of your project?",
+      },
+      {
+        type: "input",
+        name: "description
+        message: "How would you describe your project?",
+      },
+      {
+        type: "input",
+        name: "installation",
+        message: "How do you want to install your application?",
+      },
+      {
+        type: "input",
+        name: "usage",
+        message: "What steps should one take to properly use your application?",
+      },
+      {
+        type: "list",
+        message: "What is your preferred license for your application?",
+        name: "license",
+        choices: [
+          "MIT",
+          "GNU AGPLv3",
+          "Apache License 2.0"
+        ]
+      },
+      {
+        type: "input",
+        name: "contribute",
+        message: "How can people contribute?",
+      },
+      {
+        type: "input",
+        name: "test",
+        message: "How can one test the functionality of your application?",
+      },
+      {
+        type: "input",
+        name: "question",
+        message: "Where can one go if they have a question?",
+      },
+});
 
-// function to write README file
-function writeToFile(fileName, data) {
-}
+promptUser()
 
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+.then(function(answers){
+    fs.writeFileSync("README.md", generateMarkdown(answers), function (err) {
+        if (err) {
+            throw err;
+        }
+}}
