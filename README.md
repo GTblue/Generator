@@ -16,23 +16,25 @@
 
 ## Installation
 
-### Git clone this repository and input "npm install" into the terminal. 
+#### Git clone this repository and input "npm install" into the terminal. 
 
 ## Usage
 
-### Use the terminal to run the file index.js and answer the prompted questions to create your README.md file.
+#### Use the terminal to run the file index.js and answer the prompted questions to create your README.md file.
 
 ## Contributing
 
-### Gregory Monroe II
+#### Gregory Monroe II
 
 ## License
 
+#### MIT License, GNU AGPLv3 or Apache License 2.0
+        
 ## Tests
 
-### None 
+#### None 
 
 ## Questions
 
-### If you have any questions please email me at gregthemusician@gmail.com
+#### If you have any questions please email me at gregthemusician@gmail.com
 
