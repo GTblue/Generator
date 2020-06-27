@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require("./utils/generateMarkdown.js")
 
 function promptUser() {
     return inquirer.prompt([
@@ -11,7 +11,7 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "description
+        name: "description",
         message: "How would you describe your project?",
       },
       {
@@ -31,7 +31,7 @@ function promptUser() {
         choices: [
           "MIT",
           "GNU AGPLv3",
-          "Apache License 2.0"
+          "Apache License 2.0",
         ]
       },
       {
@@ -46,16 +46,16 @@ function promptUser() {
       },
       {
         type: "input",
-        name: "question",
-        message: "Where can one go if they have a question?",
+        name: "questions",
+        message: "Where can one go if they have any questions?",
       },
-});
+    ]
+    )}
 
-promptUser()
-
-.then(function(answers){
+promptUser().then(function(answers){
     fs.writeFileSync("README.md", generateMarkdown(answers), function (err) {
         if (err) {
-            throw err;
+            throw (err);
         }
-}}
+})
+});
