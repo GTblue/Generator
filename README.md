@@ -9,7 +9,7 @@
 
 ### [Installation](#installation)
 ### [Usage](#usage)
-### [Contributing](#contribute)
+### [Contributing](#contributing)
 ### [License](#license)
 ### [Test](#test)
 ### [Questions](#questions)
@@ -30,11 +30,11 @@
 
 #### MIT License, GNU AGPLv3 or Apache License 2.0
         
-## Tests
+## Test
 
 #### None 
 
 ## Questions
 
-#### If you have any questions please email me at gregthemusician@gmail.com
+#### If you have any questions please email me at gregthemusician@gmail.com or my GitHub profile at https://github.com/GTblue
 
