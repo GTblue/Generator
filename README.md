@@ -1,18 +1,18 @@
 
 # README Generator
 
-## Description
+## [Description](#description)
 
 ### This is a command-line application that will allow the developer to quickly and easily generation of a professional README.md file. 
 
 ## Table of Contents
 
-### Installation
-### Usage
-### Contributing
-### License
-### Tests
-### Questions
+### [Installation](#installation)
+### [Usage](#usage)
+### [Contributing](#contribute)
+### [License](#license)
+### [Test](#test)
+### [Questions](#questions)
 
 ## Installation
 
@@ -21,7 +21,6 @@
 ## Usage
 
 ### Use the terminal to run the file index.js and answer the prompted questions to create your README.md file.
-
 
 ## Contributing
 
