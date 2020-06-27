@@ -21,7 +21,8 @@
 ## Usage
 
 #### Use the terminal to run the file index.js and answer the prompted questions to create your README.md file.
-#### Example given here https://drive.google.com/file/d/1KByxqhFflhJeiuwcVDWDd9X6tjOSwUoD/view
+
+#### Tutorial Given Here  https://drive.google.com/file/d/1KByxqhFflhJeiuwcVDWDd9X6tjOSwUoD/view
 
 ## Contributing
 
