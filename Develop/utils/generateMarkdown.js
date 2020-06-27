@@ -1,5 +1,11 @@
 // function to generate markdown for README
+
+function createBadge(license){
+  return `![${license}](https://img.shields.io/badge/license-${license}-blue.svg)`
+}
+
 function generateMarkdown(answers) {
+  
   return `# ${answers.title}
   # ${answers.title}
   ## Table of Contents
@@ -10,6 +16,7 @@ function generateMarkdown(answers) {
   * [Contributing](#contribute)
   * [Test](#test)
   * [Questions](#questions)
+  * [Badge](#)
   ## Description
   ${answers.description}
   ## Installation
@@ -26,7 +33,10 @@ function generateMarkdown(answers) {
   ${answers.questions}
 
   You may contact me with any questions on GitHub at https://github.com/${answers.username}.
+ 
   ##Badges
+${createBadge(answers.license)}
+  
 `;
 }
 
